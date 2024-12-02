@@ -1,0 +1,162 @@
+*{
+    margin: none;
+    padding: none;
+    box-sizing: border-box;
+}
+
+.entete{
+    background-image: url(./images/mont\ fuji.jpeg);
+    background-size: cover;
+    background-position: 5% 25%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+button{
+    cursor: pointer;
+    display: block;
+    margin: 20px;
+    padding: 10px;
+    border: none;
+    background-color: aqua;
+}
+
+.btn-1{
+    color: white;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.entete .navigation ul{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.entete .navigation ul li{
+    margin: 0 15px;
+}
+
+.entete .navigation ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* La boîte avec les images de voyage */
+
+h2{
+    text-align: center;
+}
+
+.contenu-boite{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin-top: 0px;
+}
+
+.contenu-boite .boite{
+    width: 300px;
+    margin: 0px 35px;
+    border: 5px solid rebeccapurple;
+    border-radius: 10px;
+}
+
+.contenu-boite .boite .images-voyages{
+    position: relative;
+    width: 100%;
+}
+
+.contenu-boite .boite .images-voyages img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contenu-boite .boite .nom-pays{
+    text-align: center;
+    font-weight: 300px;
+    color: black;
+}
+
+/* La partie contact */
+
+form{
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+input,textarea{
+    display: block;
+    width: 100%;
+    margin: 0 0 10px;
+}
+
+.btn-2{
+    color: white;
+    width: 200px;
+    border-radius: 5px;
+}
+
+@media (max-width: 1200px) {
+    .contenu-boite .boite {
+        width: 250px;
+        margin: 0 25px;
+    }
+
+    .entete {
+        padding: 20px;
+    }
+
+    button {
+        padding: 8px;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenu-boite {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenu-boite .boite {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .entete {
+        background-position: center;
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+        margin: 10px 0;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .entete {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 6px;
+    }
+
+    .entete .navigation ul {
+        flex-direction: column;
+    }
+
+    .entete .navigation ul li {
+        margin: 10px 0;
+    }
+}
